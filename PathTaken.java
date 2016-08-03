@@ -5,7 +5,7 @@
  * @author Pablo Lopez
  *
  * @version 07.31.2016
- * @file Robot.java
+ * @file MazeSolverRobot.java
  * */
 
 //checks if robot is outside the maze
@@ -20,7 +20,9 @@ public class PathTaken {
 			return 2;
 	}
 
-	public void desicion(){
+	public void choice(){
+
+		//makes user input
 
 	}
 }

@@ -12,23 +12,24 @@ public class SolveMaze{
 
 	private boolean front;
 	private boolean right;
-	private Robot newRobot;
-	private PathTaken decidir;
+	private MazeSolverRobot newRobot;
+	private PathTaken newPathTaken;
 	private boolean fin=false;
 
 	public void Play(){
 	}
 
 	public void run(){
-		int escoger = decidir.desicion();
+		int escoger = newPathTaken.choice();
 		if(escoger==0)
 			newRobot.spinRobotRight();
-		else if(escoger==1){
+		else if (escoger == 1) {
 			newRobot.goForward();
-		else
-			newRobot.spinRobotLeft();
 		}
-	}
+		else{
+			newRobot.spinRobotLeft();
+			}
+		}
 
 	public void setFront(boolean front){
 		this.front=front;
